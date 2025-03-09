@@ -1,27 +1,12 @@
 <?php
-/**
- * Directories Class
- * 
- * This class handles the creation of directories and files
- */
+
 class Directories {
-    /**
-     * Base directory where all user directories will be created
-     */
+  
     private $baseDir = 'directories';
     
-    /**
-     * Default filename
-     */
+    
     private $defaultFilename = 'readme.txt';
     
-    /**
-     * Create a directory and file with user-provided content
-     *
-     * @param string $dirName The name of the directory to create
-     * @param string $fileContent The content to put in the file
-     * @return array Result array with success status, message, and path
-     */
     public function createDirectoryAndFile($dirName, $fileContent) {
         // Validate directory name (alphanumeric only)
         if (!preg_match('/^[a-zA-Z0-9]+$/', $dirName)) {

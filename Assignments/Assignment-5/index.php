@@ -1,24 +1,23 @@
 <?php
-// Include the Directories class
+
 require_once 'classes/Directories.php';
 
-// Initialize message variable
+
 $message = '';
 $filePath = '';
 
-// Check if form was submitted
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Get form data
+
     $folderName = $_POST['folderName'] ?? '';
     $fileContent = $_POST['fileContent'] ?? '';
     
     // Create new Directories object
     $dirManager = new Directories();
     
-    // Attempt to create directory and file
+    // create directory and file
     $result = $dirManager->createDirectoryAndFile($folderName, $fileContent);
     
-    // Handle result
     if ($result['success']) {
         $filePath = $result['path'];
     } else {
