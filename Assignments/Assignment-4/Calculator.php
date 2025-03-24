@@ -19,8 +19,8 @@ class Calculator {
         }
         
         // Convert strings to numbers if they're numeric
-        $num1 = $num1 + 0; 
-        $num2 = $num2 + 0;  
+        $num1 = $num1 + 0;  // Convert to int/float
+        $num2 = $num2 + 0;  // Convert to int/float
         
         // Perform calculation based on operator
         switch ($operator) {
