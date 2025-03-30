@@ -27,3 +27,9 @@ INSERT INTO customers(cust_id, cust_name, cust_address, cust_city, cust_state, c
 VALUES(10004, 'Yosemite Place', '829 Riverside Drive', 'Phoenix', 'AZ', '88888', 'USA', 'Y Sam', 'sam@yosemite.com');
 INSERT INTO customers(cust_id, cust_name, cust_address, cust_city, cust_state, cust_zip, cust_country, cust_contact, cust_email)
 VALUES(10005, 'E Fudd', '4545 53rd Street', 'Chicago', 'IL', '54545', 'USA', 'E Fudd','fudd@wraskalrabbit.com');
+
+CREATE TABLE pdf_files (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  file_name VARCHAR(255) NOT NULL,
+  file_path VARCHAR(255) NOT NULL
+) ENGINE=InnoDB;

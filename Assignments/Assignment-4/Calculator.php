@@ -19,8 +19,8 @@ class Calculator {
         }
         
         // Convert strings to numbers if they're numeric
-        $num1 = $num1 + 0;  // Convert to int/float
-        $num2 = $num2 + 0;  // Convert to int/float
+        $num1 = $num1 + 0; 
+        $num2 = $num2 + 0;  
         
         // Perform calculation based on operator
         switch ($operator) {
@@ -42,6 +42,9 @@ class Calculator {
         }
         
         return "<p>The calculation is $num1 $operator $num2. The answer is $result.</p>";
+    }
+}
+?>um2. The answer is $result.</p>";
     }
 }
 ?>
